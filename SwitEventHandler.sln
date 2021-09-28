@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitEventHandler", "SwitEventHandler\SwitEventHandler.csproj", "{8254B098-3237-4A0A-9F44-B4DA52B4A7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitEventHandler.Test", "SwitEventHandler.Test\SwitEventHandler.Test.csproj", "{B9DB7519-7F29-4FAB-A9FB-2C048C50DAA0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8254B098-3237-4A0A-9F44-B4DA52B4A7AB} = {8254B098-3237-4A0A-9F44-B4DA52B4A7AB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8254B098-3237-4A0A-9F44-B4DA52B4A7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8254B098-3237-4A0A-9F44-B4DA52B4A7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8254B098-3237-4A0A-9F44-B4DA52B4A7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8254B098-3237-4A0A-9F44-B4DA52B4A7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DB7519-7F29-4FAB-A9FB-2C048C50DAA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DB7519-7F29-4FAB-A9FB-2C048C50DAA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DB7519-7F29-4FAB-A9FB-2C048C50DAA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DB7519-7F29-4FAB-A9FB-2C048C50DAA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C282FE5-9D71-402B-B3E0-A5489FDAE80F}
+	EndGlobalSection
+EndGlobal
