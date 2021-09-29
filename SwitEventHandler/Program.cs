@@ -1,4 +1,4 @@
-﻿namespace SwitEventHandler
+namespace SwitEventHandler
 {
     class Program
     {

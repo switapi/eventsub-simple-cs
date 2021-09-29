@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 
 using Xunit;
@@ -49,6 +50,15 @@ namespace SwitEventHandler.Test.SwitEvent
             TimeSpan diff = expected_datetime.Subtract(converted_dt);
 
             Assert.Equal(0, diff.Seconds);
+        }
+
+        [Fact]
+        public void GetHMACSignatureTest()
+        {
+            var body = EventSecurityTest.GetBodyString();
+            var timestamp = ((DateTimeOffset)DateTime.UtcNow).ToUnixTimeSeconds().ToString();
+            var signature = EventUtils.GetHMACSignature(body, EventSecurityTest.SwiteventSecret, timestamp);
+            Assert.NotEmpty(signature);
         }
     }
 }
