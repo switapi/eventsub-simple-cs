@@ -8,7 +8,6 @@ namespace SwitEvent
 		public string event_app_id;
 		public string cmp_id;
 		public JObject data;
-		public string token;
 		public string event_type;
 		public string verification_code;
 	}
