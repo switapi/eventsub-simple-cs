@@ -8,7 +8,7 @@ namespace SwitEvent
     public static class EventSecurity
     {
         public const string SwitSecretVersion = "s0=";
-        public const int SwitMaxDelay = 5; // second
+        public const int SwitMaxDelay = 5; // minute
 
         public const string SwitRequestId = "X-Swit-Request-Id";
         public const string SwitSignature = "X-Swit-Signature";
@@ -62,7 +62,7 @@ namespace SwitEvent
             DateTime sent = EventUtils.UnixTimeStampToDateTime(timestamp);
             TimeSpan elapsedTime = DateTime.UtcNow.Subtract(sent);
             Console.WriteLine("Elapsed Time:{0}", elapsedTime.Seconds);
-            if (Math.Abs(elapsedTime.Seconds) >= SwitMaxDelay)
+            if (Math.Abs(elapsedTime.Seconds) >= SwitMaxDelay * 60)
             {
                 Console.WriteLine("Over max delay: {0} / {1}", elapsedTime.Seconds, SwitMaxDelay);
                 return false;
