@@ -210,9 +210,9 @@ namespace SwitEvent.Approval
 		public Int32 approval_status;
 
 		/// <summary>
-		/// is_public represents degree of disclosure (private or open to a certain degree)
+		/// public_type represents degree of disclosure (private or open to a certain degree)
 		/// </summary>
-		public Int32 is_public;
+		public Int32 public_type;
 
 		/// <summary>
 		/// requested represents requested date

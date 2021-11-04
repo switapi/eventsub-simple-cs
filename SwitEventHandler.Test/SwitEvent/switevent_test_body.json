@@ -12,7 +12,7 @@
     "body_blockskit":"{\"type\":\"rich_text\",\"elements\":[{\"type\":\"rt_section\",\"elements\":[{\"type\":\"rt_text\",\"content\":\"test\"}]}]}",
     "approval_cont_id":"210928070870az5neci",
     "approval_status":0,
-    "is_public":0,
+    "public_type":0,
     "requested":"2021-09-28T07:08:02Z",
     "step_approvers":
     [
