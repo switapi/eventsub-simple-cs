@@ -32,7 +32,6 @@
     ],
     "referrer_teams":[],
     "referrers":[],
-    "is_bookmarked":0,
     "step_count":1,
     "completed_step":0,
     "created":"2021-09-28T07:08:02Z",
@@ -43,7 +42,7 @@
     "action_user_id":"",
     "asset_data":[],
     "html_content":"",
-    "is_html_editable":0,
+    "is_html_editable":false,
     "substitute":[]
   },
   "token":"",

@@ -235,11 +235,6 @@ namespace SwitEvent.Approval
 		public Referrer[] referrers;
 
 		/// <summary>
-		/// is_bookmarked represent bookmarked or not
-		/// </summary>
-		public Int32 is_bookmarked;
-
-		/// <summary>
 		/// The count of total step
 		/// </summary>
 		public Int32 step_count;
@@ -292,7 +287,7 @@ namespace SwitEvent.Approval
 		/// <summary>
 		/// is_html_editable represent HTML is editable or not
 		/// </summary>
-		public Int32 is_html_editable;
+		public bool is_html_editable;
 
 		/// <summary>
 		/// The list of substitute
