@@ -26,6 +26,7 @@
 		// EventApprovalCreate is an event used when rejecting approval
 		public const string EventApprovalReject = "approval.reject";
 
+        // Deprecated (not functioning, approval.approve event can handle this event)
 		// EventApprovalCreate is an event used when approving last
 		public const string EventApprovalLastApprove = "approval.last_approve";
     }

@@ -293,5 +293,15 @@ namespace SwitEvent.Approval
 		/// The list of substitute
 		/// </summary>
 		public Substitute[] substitute;
+
+		/// <summary>
+		/// is_last_approve indicates the end of approval
+		/// </summary>
+		public bool is_last_approve;
+
+        /// <summary>
+        /// last_approve_referrer_teams is the list of referrer teams for last approval
+        /// </summary>
+        public string[] last_approve_referrer_teams;
 	}
 }

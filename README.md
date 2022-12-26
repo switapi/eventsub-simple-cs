@@ -74,6 +74,11 @@ public static void ProcessSwitEvent(HttpListenerRequest req, HttpListenerRespons
                 evt.event_type == EventType.EventApprovalLastApprove)
         {
             ApprovalInfo ai = EventParams.ParseAPI<ApprovalInfo>(evt.data);
+            
+            if (evt.event_type == EventType.EventApprovalLastApprove || ai.is_last_approve)
+            {
+                ai.referrer_teams = ai.last_approve_referrer_teams;
+            }
         }
         else
         {
